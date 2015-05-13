@@ -1,9 +1,7 @@
 /* Copyright 2015, by Pikulin Ilya */
 #include <iostream>
-#include <vector>
 #include <cstdio>
-#include <cmath>
-#include <cstdlib>
+#include <vector>
 using namespace std;
 
 //#define DEBUGGING

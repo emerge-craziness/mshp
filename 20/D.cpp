@@ -5,17 +5,6 @@ using namespace std;
 
 //#define DEBUGGING
 
-std::vector< int >& generateSequences( int N, int by )
-{
-    vector< int >& sequences = *( new vector< int > );
-    for ( int i = 1; i * by <= N; i++ )
-    {
-        sequences.push_back( i );
-    }
-    return sequences;
-}
-
-
 int main( int argc, char** argv )
 {
     int N;

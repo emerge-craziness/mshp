@@ -10,6 +10,12 @@ int main( int argc, char* argv[] )
 {
     unsigned int N;
     cin >> N;
+
+    if ( N <= 1 )
+    {
+        return 0;
+    }
+
     vector< unsigned int >& prime_integers = *( new vector< unsigned int > );
     prime_integers.reserve( 20 );
 #ifdef DEBUGGING

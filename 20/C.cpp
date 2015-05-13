@@ -10,7 +10,7 @@ int main( int argc, char* argv[] )
 {
     unsigned int N;
     cin >> N;
-    vector< unsigned int >& prime_integers = *(new vector< unsigned int >);
+    vector< unsigned int >& prime_integers = *( new vector< unsigned int > );
     prime_integers.reserve( 20 );
 #ifdef DEBUGGING
     fprintf( stderr, "%s: line %i ok\n", __FILE__, __LINE__ );
@@ -34,14 +34,14 @@ int main( int argc, char* argv[] )
         for ( unsigned int j = 0; j < prime_integers.size(); j++ )
         {
 #ifdef DEBUGGING
-    fprintf( stderr, "%s: line %i ok\n", __FILE__, __LINE__ );
-    fflush( stderr );
+            fprintf( stderr, "%s: line %i ok\n", __FILE__, __LINE__ );
+            fflush( stderr );
 #endif
             if ( i % prime_integers[j] == 0 )
             {
 #ifdef DEBUGGING
-    fprintf( stderr, "%s: line %i ok\n", __FILE__, __LINE__ );
-    fflush( stderr );
+                fprintf( stderr, "%s: line %i ok\n", __FILE__, __LINE__ );
+                fflush( stderr );
 #endif
                 it_is = false;
             }
@@ -54,12 +54,12 @@ int main( int argc, char* argv[] )
 #endif
         }
     }
-
+    
     for ( int i = 0; i < prime_integers.size(); i++ )
     {
         cout << prime_integers[i] << "\n";
     }
     cout << flush;
-
+    
     return 0;
 }
